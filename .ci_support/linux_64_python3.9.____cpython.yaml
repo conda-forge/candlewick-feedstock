@@ -19,7 +19,9 @@ docker_image:
 ffmpeg:
 - '7'
 fmt:
-- '10'
+- '11.1'
+libboost_python_devel:
+- '1.86'
 pin_run_as_build:
   python:
     min_pin: x.x
