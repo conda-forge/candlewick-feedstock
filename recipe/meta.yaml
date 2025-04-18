@@ -36,7 +36,6 @@ requirements:
     - eigenpy
     - entt
     - ffmpeg
-    - fmt
     - libboost-python-devel
     - magic_enum
     - nlohmann_json
