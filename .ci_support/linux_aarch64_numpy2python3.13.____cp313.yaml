@@ -22,11 +22,16 @@ fmt:
 - '11.1'
 libboost_python_devel:
 - '1.86'
+numpy:
+- '2'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.13.* *_cp313
 target_platform:
 - linux-aarch64
+zip_keys:
+- - python
+  - numpy
