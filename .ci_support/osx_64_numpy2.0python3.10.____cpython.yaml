@@ -18,8 +18,6 @@ cxx_compiler_version:
 - '18'
 ffmpeg:
 - '7'
-fmt:
-- '11.1'
 libboost_python_devel:
 - '1.86'
 macos_machine:
