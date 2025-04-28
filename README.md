@@ -342,6 +342,3 @@ Feedstock Maintainers
 * [@ManifoldFR](https://github.com/ManifoldFR/)
 * [@ymontmarin](https://github.com/ymontmarin/)
 
-
-<!-- dummy commit to enable rerendering -->
-
