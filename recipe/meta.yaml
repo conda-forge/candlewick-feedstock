@@ -1,5 +1,5 @@
 {% set name = "candlewick" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db0aa0ca32d98a7ba2d5c49283906d286546309a41f575931b9d1f2b8aea2559
+  sha256: 15d226e156bd06d452975a4a3b5183da875accf03bf513470aa6b07c30144335
 
 build:
   # For the v0.0.2, windows is not available but will be in future realease
