@@ -20,6 +20,8 @@ ffmpeg:
 - '7'
 libboost_python_devel:
 - '1.86'
+msgpack_cxx:
+- '7'
 numpy:
 - '2'
 pin_run_as_build:
