@@ -43,10 +43,9 @@ requirements:
     - pinocchio
     - python
     - sdl3
-    - msgspec
     - msgpack-cxx
+    - cli11 2.4.*
     - cppzmq
-    - pyzmq
   run:
     - assimp
     - coal
@@ -54,6 +53,8 @@ requirements:
     - pinocchio
     - python
     - sdl3
+    - msgspec
+    - pyzmq
 
 test:
   commands:
