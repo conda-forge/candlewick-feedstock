@@ -43,6 +43,10 @@ requirements:
     - pinocchio
     - python
     - sdl3
+    - msgspec
+    - msgpack-cxx
+    - cppzmq
+    - pyzmq
   run:
     - assimp
     - coal
