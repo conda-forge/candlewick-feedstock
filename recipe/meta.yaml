@@ -31,11 +31,11 @@ requirements:
   host:
     - assimp
     - coal
-    - libcoal
     - eigen
     - eigenpy
     - entt
     - ffmpeg
+    - libboost-devel
     - libboost-python-devel
     - magic_enum
     - nlohmann_json
@@ -46,18 +46,21 @@ requirements:
     - msgpack-cxx
     - cli11 2.4.*
     - cppzmq
+    - qhull
+    - qhull-static  # [not win]
   run:
-    - assimp
-    - coal
     - libboost-python-devel
     - pinocchio
     - python
     - sdl3
+    - qhull-static  # [not win]
     - msgspec
     - pyzmq
+    - zeromq
 
 test:
   commands:
+    - test -f $PREFIX/bin/candlewick-visualizer$SHLIB_EXT           # [unix]
     - test -f $PREFIX/lib/libcandlewick_core$SHLIB_EXT           # [unix]
     - test -f $PREFIX/lib/libcandlewick_multibody$SHLIB_EXT      # [unix]
     - if not exist %LIBRARY_LIB%\\boost_log-vc140-mt.lib exit 1  # [win]
