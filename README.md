@@ -340,5 +340,6 @@ Feedstock Maintainers
 =====================
 
 * [@ManifoldFR](https://github.com/ManifoldFR/)
+* [@jorisv](https://github.com/jorisv/)
 * [@ymontmarin](https://github.com/ymontmarin/)
 
