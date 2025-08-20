@@ -43,6 +43,7 @@ requirements:
     - pinocchio
     - python
     - sdl3
+    - spdlog
   run:
     - assimp
     - coal
@@ -50,6 +51,7 @@ requirements:
     - pinocchio
     - python
     - sdl3
+    - spdlog
 
 test:
   commands:
