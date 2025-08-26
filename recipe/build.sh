@@ -20,6 +20,7 @@ fi
 
 
 cmake -S . -B build ${CMAKE_ARGS} \
+  -GNinja \
   -DCMAKE_PREFIX_PATH=$PREFIX \
   -DCMAKE_BUILD_TYPE=Release \
   -DBUILD_PINOCCHIO_VISUALIZER=ON \

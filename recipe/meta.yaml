@@ -1,5 +1,5 @@
 {% set name = "candlewick" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16f29bf1e86de9092b7997997be60a4c873bd0b120b5d076b5b1dfe788debdb4
+  sha256: 0e0c1afb67b5eeac5e554ca4f1101364224dd93cf9df57d3fe42b07fe3fc176c
 
 build:
   # For the v0.0.2, windows is not available but will be in future realease
   skip: true  # [win]
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
@@ -22,9 +22,8 @@ requirements:
     - {{ stdlib("c") }}
     - cmake
     - pkg-config
-    - make   # [not win]
     - clang  # [win]
-    - ninja  # [win]
+    - ninja
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
@@ -46,6 +45,8 @@ requirements:
     - msgpack-cxx
     - cli11 2.4.*
     - cppzmq
+    - spdlog
+    - fmt  # because spdlog need it, but it's not exported in run requirements
     - qhull
     - qhull-static  # [not win]
   run:

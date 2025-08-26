@@ -34,5 +34,7 @@ python:
 - 3.11.* *_cpython
 qhull:
 - '2020.2'
+spdlog:
+- '1.15'
 target_platform:
 - linux-aarch64
