@@ -1,21 +1,21 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.13'
+MACOSX_SDK_VERSION:
+- '10.13'
 assimp:
 - 5.4.3
 c_stdlib:
-- sysroot
+- macosx_deployment_target
 c_stdlib_version:
-- '2.17'
-cdt_name:
-- conda
+- '10.13'
 channel_sources:
-- conda-forge
+- conda-forge,conda-forge/label/python_rc
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- gxx
+- clangxx
 cxx_compiler_version:
-- '14'
-docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma9
+- '19'
 ffmpeg:
 - '8'
 fmt:
@@ -24,6 +24,8 @@ libboost_devel:
 - '1.88'
 libboost_python_devel:
 - '1.88'
+macos_machine:
+- x86_64-apple-darwin13.4.0
 msgpack_cxx:
 - '7'
 numpy:
@@ -33,13 +35,13 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.14.* *_cp314
 qhull:
 - '2020.2'
 spdlog:
 - '1.15'
 target_platform:
-- linux-ppc64le
+- osx-64
 zip_keys:
 - - python
   - channel_sources
