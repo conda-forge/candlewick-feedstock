@@ -18,6 +18,8 @@ cxx_compiler_version:
 - '19'
 ffmpeg:
 - '8'
+fmt:
+- '11.2'
 libboost_devel:
 - '1.88'
 libboost_python_devel:
@@ -40,3 +42,6 @@ spdlog:
 - '1.15'
 target_platform:
 - osx-arm64
+zip_keys:
+- - python
+  - channel_sources
