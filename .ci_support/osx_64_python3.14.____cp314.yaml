@@ -9,7 +9,7 @@ c_stdlib:
 c_stdlib_version:
 - '10.13'
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -19,7 +19,7 @@ cxx_compiler_version:
 ffmpeg:
 - '8'
 fmt:
-- '11.2'
+- '12.0'
 libboost_devel:
 - '1.88'
 libboost_python_devel:
@@ -39,9 +39,6 @@ python:
 qhull:
 - '2020.2'
 spdlog:
-- '1.15'
+- '1.16'
 target_platform:
 - osx-64
-zip_keys:
-- - python
-  - channel_sources
