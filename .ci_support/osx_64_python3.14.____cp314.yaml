@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '11.0'
 assimp:
-- 6.0.3
+- '6'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,7 +17,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 ffmpeg:
-- '8'
+- '9'
 fmt:
 - '12.1'
 libboost_devel:
